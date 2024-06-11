@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lab9/style.css" />
+    <title>Лабораторна 9</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="images" src="./img/me.jpg" alt = "myPhoto">
+            <div class="middle">
+                    <p>
+                    Тернопільський національний технічний університет ім. Івана Пулюя<br>
+                    Факультет ФІС<br>
+                    Кафедра комп’ютерних наук
+                    </p>
+                    <p>
+                        Лабораторна робота №9<br>
+                        Богач Максим Михайлович<br>
+                        група СП-31
+                    </p>
+                
+            </div>
+            <div class="log">
+                <img class="logos" src="./img/tntu-logo.png" alt = "tntuLogo">
+                <img class="logos" src="./img/FIS_logo.png" alt = "FIS">
+                <img class="logos" src="./img/KN_logo.png" alt = "KN">
+            </div>
+            
+        </header> 
+        <div class="container">
+            <div class="task">
+                <h2>Перевірка дійсного числа</h2>
+                <input type="text" id="numberInput" placeholder="42.0">
+                <button id="checkButton">Перевірити</button>
+                <div id="result"></div>
+            </div>
+
+            <div class="task">
+                <h2>Біжуча стрічка в рядку</h2>
+                <div id="floatingText"></div>
+            </div>
+
+            <div class="task">
+                <h2>Перевірка електронної адреси</h2>
+                <input type="text" id="emailInput" placeholder="maksymbochach@gmail.com">
+                <button onclick="checkEmail()">Перевірити</button>
+                <p id="result1"></p>
+            </div>
+
+            <div class="task">
+                <h2>Видалення послідовних пробілів</h2>
+                <textarea id="textInput" placeholder="Enter your text"></textarea>
+                <button onclick="processText()">Видалити Пробіли</button>
+                <p id="result2"></p>
+            </div>
+
+            <div class="task">
+                <button onclick="getCurrentDate()">Отримати сьогоднішню дату</button>
+                <div id="resultContainer1"></div>
+            </div>
+
+            <div class="task">
+                <label for="birthdateInput2">Введіть дату народження:</label>
+                <input type="date" id="birthdateInput2">
+                <button onclick="getBirthDayOfWeek()">День тижня народження</button>
+                <div id="resultContainer2"></div>
+            </div>
+
+            <div class="task">
+                <label for="birthdateInput3">Введіть дату народження:</label>
+                <input type="date" id="birthdateInput3">
+                <button onclick="getPastDatesAndDays()">Дати та дні тижня 10, 12, 25 та 38 років тому</button>
+                <div id="resultContainer3"></div>
+            </div>
+
+            <div class="task">
+                <label for="birthdateInput4">Введіть дату народження:</label>
+                <input type="date" id="birthdateInput4">
+                <button onclick="getFutureBirthday()">День тижня через три роки від дати народження</button>
+                <div id="resultContainer4"></div>
+            </div>
+
+            <div class="task">
+                <label for="hours1">Години (початковий час):</label>
+                <input type="number" id="hours1" placeholder="10">
+
+                <label for="minutes1">Хвилини (початковий час):</label>
+                <input type="number" id="minutes1" placeholder="51">
+
+                <label for="hours2">Години (кінцевий час):</label>
+                <input type="number" id="hours2" placeholder="14">
+
+                <label for="minutes2">Хвилини (кінцевий час):</label>
+                <input type="number" id="minutes2" placeholder="12">
+
+                <button onclick="calculateTimeDifference()">Розрахувати інтервал</button>
+
+                <div id="resultContainer5"></div>
+            </div>
+
+            <div class="task">
+                <h2>Перевірка на числове значення</h2>
+
+                <label for="numericInput">Введіть число:</label>
+                <input type="text" id="numericInput" placeholder="666">
+
+                <button onclick="checkNumericValue()">Перевірити</button>
+
+                <p id="result6"></p>
+            </div>
+
+            <div class="task">
+                <h2>Представлення числа в різних системах</h2>
+
+                <label for="birthdateInput7">Введіть дату народження:</label>
+                <input type="date" id="birthdateInput7">
+
+                <button onclick="showNumberRepresentations()">Показати представлення числа</button>
+                <div id="resultContainer7"></div>
+            </div>
+
+            <div class="task">
+                <h2>Обчислення гіпотенузи прямокутного трикутника</h2>
+
+                <label for="sideA">Перший катет:</label>
+                <input type="number" id="side1" placeholder="3">
+
+                <label for="sideB">Другий катет:</label>
+                <input type="number" id="side2" placeholder="4">
+
+                <button onclick="calculateHypotenuse()">Обчислити гіпотенузу</button>
+
+                <p id="result8"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
